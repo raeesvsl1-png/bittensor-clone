@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bittensor — decentralized machine intelligence network</title>
+  <meta name="description" content="Bittensor is an open network where subnets produce digital commodities — compute, inference, storage, prediction — and contributors earn TAO. Build with the Bittensor Python SDK and btcli." />
+  <link rel="canonical" href="https://www.bittensor.com" />
+  <meta property="og:title" content="Bittensor" />
+  <meta property="og:description" content="Bittensor is an open, decentralized network where independent subnets produce digital commodities — compute, inference, storage, prediction — and the chain pays contributors in TAO." />
+  <meta property="og:site_name" content="Bittensor" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@bittensor_" />
+  <meta name="twitter:title" content="Bittensor" />
+  <meta name="twitter:description" content="Bittensor is an open, decentralized network where independent subnets produce digital commodities — compute, inference, storage, prediction — and the chain pays contributors in TAO." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Bittensor","url":"https://www.bittensor.com","sameAs":["https://x.com/bittensor_","https://github.com/RaoFoundation"]}
+  </script>
+</head>
+<body>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <div class="header-wrapper">
+    <header class="header-container">
+
+      <!-- TAO Logo -->
+      <div class="tao-logo">
+        <a href="/" aria-label="Bittensor home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 21 23">
+            <path fill="currentColor" d="M12.53 17.783v-9.08a4.144 4.144 0 0 0-4.14-4.117v14.511a3.8 3.8 0 0 0 3.96 3.841 4.28 4.28 0 0 0 2.816-.816c-2.39-.253-2.635-1.693-2.635-4.339"/>
+            <path fill="currentColor" d="M3.775.787A3.8 3.8 0 0 0 0 4.587h16.893a3.8 3.8 0 0 0 3.775-3.8z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="menu-list" aria-label="Primary">
+        <a href="/about" class="nav-link">ABOUT</a>
+        <a href="/whitepaper" class="nav-link">WHITEPAPER</a>
+        <a href="/docs" class="nav-link">DOCS</a>
+        <a href="https://discord.gg/qasY3HA9F9" target="_blank" rel="noopener" class="nav-link">DISCORD</a>
+        <a href="/wallet" class="nav-link">WALLET</a>
+        <a href="/explore" class="nav-link">EXPLORE</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8.862h15M1 1.93h15M1 15.793h15"/>
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" style="display:none">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l15 15M16 1 1 16"/>
+        </svg>
+      </button>
+
+      <!-- Right spacer (mirrors logo width for centering) -->
+      <div class="right-spacer" aria-hidden="true"></div>
+    </header>
+  </div>
+
+  <!-- ── MOBILE MENU ────────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile primary">
+      <a href="/about" class="mobile-nav-link">ABOUT</a>
+      <a href="/whitepaper" class="mobile-nav-link">WHITEPAPER</a>
+      <a href="/docs" class="mobile-nav-link">DOCS</a>
+      <a href="https://discord.gg/qasY3HA9F9" target="_blank" rel="noopener" class="mobile-nav-link">DISCORD</a>
+      <a href="/wallet" class="mobile-nav-link">WALLET</a>
+      <a href="/explore" class="mobile-nav-link">EXPLORE</a>
+    </nav>
+  </div>
+
+  <!-- ── MAIN / CANVAS ──────────────────────────────────────── -->
+  <main class="main-container">
+    <!-- Screen-reader content -->
+    <h1 class="sr-only">Bittensor — decentralized machine intelligence network</h1>
+    <p class="sr-only">Bittensor is an open network where independent subnets produce digital commodities and the chain pays contributors in TAO. Explore the documentation for the Bittensor Python SDK and btcli command line: create a wallet, stake TAO, mine, validate, and run subnets.</p>
+
+    <!-- Canvas -->
+    <div class="canvas-wrap">
+      <canvas id="bittensor-canvas"></canvas>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
